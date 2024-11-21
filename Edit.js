@@ -81,16 +81,19 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 16,
-        backgroundColor: '#fff',
+        backgroundColor:'#2A2827',
     },
     label: {
         fontSize: 16,
         marginBottom: 8,
         fontWeight: 'bold',
+        color: 'white',
     },
     input: {
         borderWidth: 1,
         marginBottom: 16,
+        borderColor:'#545352',
+        color: 'white',
     },
     buttonContainer: {
         flexDirection: 'row',

@@ -29,7 +29,7 @@ const renderSection = ({ section }) => {
 function Home({navigation}) {
   const renderItem = ({item, index, section}) => {
     return (
-        <TouchableOpacity
+        <TouchableOpacity style={styles.opacityStyle}
             onPress={() => navigation.navigate("Edit",{index:index, item:{name: item.name}, type:section.title, key:item.style})}>
           <Image
               source={{uri: `${item.image}`}}
@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     margin: 10,
+    width: 180,
     textAlign: 'left',
     flex: 1
   },
